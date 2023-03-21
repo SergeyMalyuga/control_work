@@ -29,3 +29,8 @@ String[] NewArray(String[] array, int count) // создание нового м
     }
     return array2;
 }
+
+String[] array = { "stop", "bus", "cry", "2", "hi" };
+int count = FindLength (array);
+String[] array2 = NewArray(array, count);
+Console.WriteLine ($" [{String.Join(",", array)}] -> [{String.Join(",", array2)}]");
