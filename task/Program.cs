@@ -14,3 +14,18 @@ int FindLength(String[] array) // определение длинны новог
     
     return count;
 }
+
+String[] NewArray(String[] array, int count) // создание нового массива из имеющегося
+{
+    String[] array2 = new String[count];
+    int j=0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3)
+        {
+            array2[j]=array[i];
+            j++;
+        }
+    }
+    return array2;
+}
